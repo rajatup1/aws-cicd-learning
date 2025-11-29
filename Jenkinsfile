@@ -19,7 +19,7 @@ pipeline {
                     sh'''
                     aws --version
                     echo "Hello S3!" > index.html
-                    aws s3 cp index.html s3://$deno-s3-bucket/index.html
+                    aws s3 cp index.html s3://$AWS_BUCKET_NAME/index.html
                     
                     '''
                  }
