@@ -1,21 +1,21 @@
 pipeline{
     agent any
-    stages{
+    stages {
         stage("aws version"){
         agent{
             docker{
                 image 'amazon/aws-cli:latest'
                 reuseNode true
             }
+        }
 
             steps{
-            sh'''
-             aws --version
+                sh'''
+                aws --version
 
-             '''
+                '''
             }
               
         }
     }
-}
 }
