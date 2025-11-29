@@ -11,7 +11,7 @@ pipeline {
             }
         }
           environment{
-            AWS_BUCKET_NAME = 'deno-s3-bucket '
+            AWS_BUCKET_NAME = 'deno-s3-bucket'
           }
 
           steps {
